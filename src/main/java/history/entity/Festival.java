@@ -24,7 +24,7 @@ public class Festival extends History {
     @Override
     public List<Festival> loadDataJson() throws IOException {
         Gson gson = new Gson();
-        Reader reader = Files.newBufferedReader(Paths.get("src/main/java/json/festival_Wiki.json"));
+        Reader reader = Files.newBufferedReader(Paths.get("OOP_Project_Group2/src/main/java/json/festival_Wiki.json"));
         List<Festival> dks = Arrays.asList(gson.fromJson(reader, Festival[].class)); //dks is arraylist of festival
         reader.close();
 

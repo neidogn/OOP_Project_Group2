@@ -41,7 +41,7 @@ public class Character extends History {
 	@Override
 	public List<Character> loadDataJson() throws IOException {
 		Gson gson = new Gson();
-		Reader reader = Files.newBufferedReader(Paths.get("src/main/java/json/character.json"));
+		Reader reader = Files.newBufferedReader(Paths.get("OOP_Project_Group2/src/main/java/json/character.json"));
 		List<Character> dks = Arrays.asList(gson.fromJson(reader, Character[].class));
 		reader.close();
 

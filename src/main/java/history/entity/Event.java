@@ -27,7 +27,7 @@ public class Event extends History {
 	@Override
 	public List<Event> loadDataJson() throws IOException {
 		Gson gson = new Gson();
-		Reader reader = Files.newBufferedReader(Paths.get("src/main/java/json/event.json"));
+		Reader reader = Files.newBufferedReader(Paths.get("OOP_Project_Group2/src/main/java/json/event.json"));
 		List<Event> dks = Arrays.asList(gson.fromJson(reader, Event[].class));
 
 		CrawlerManager.setEntityDisplay("Event", dks.size());
