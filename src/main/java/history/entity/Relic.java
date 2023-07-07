@@ -55,7 +55,7 @@ public class Relic extends History {
     @Override
     public List<Relic> loadDataJson() throws IOException {
         Gson gson = new Gson();
-        Reader reader = Files.newBufferedReader(Paths.get("OOP_Project_Group2/src/main/java/json/Relic.json"));
+        Reader reader = Files.newBufferedReader(Paths.get("src/main/java/json/Relic.json"));
         List<Relic> relics = Arrays.asList(gson.fromJson(reader, Relic[].class));
 
         CrawlerManager.setEntityDisplay("Relic", relics.size());
