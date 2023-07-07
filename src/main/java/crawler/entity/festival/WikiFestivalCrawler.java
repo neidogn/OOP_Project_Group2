@@ -73,7 +73,7 @@ public class WikiFestivalCrawler extends FestivalCrawler{
             festival[i].setCharacter(listCharacter.get(i));
         }
 
-        try(FileWriter writer = new FileWriter("src\\main\\java\\json\\festival_Wiki1.json", true)) {
+        try(FileWriter writer = new FileWriter("OOP_Project_Group2\\src\\main\\java\\json\\festival_Wiki1.json", true)) {
             CrawlerManager.setEntityCrawled("Lễ hội - Wikipedia", listTime.size());
             for (int i = 1; i < listTime.size(); i++) {
                 Gson gson = new GsonBuilder().setPrettyPrinting().create();

@@ -52,7 +52,7 @@ public class CoutureTravelFestivalCrawler extends FestivalCrawler{
             festival[i].setPlace(listAddress.get(i));
             festival[i].setDescription(listDescription.get(i));
         }
-        try (FileWriter writer = new FileWriter("src\\main\\java\\json\\festival_Couture1.json", true)){
+        try (FileWriter writer = new FileWriter("OOP_Project_Group2\\src\\main\\java\\json\\festival_Couture1.json", true)){
             CrawlerManager.setEntityCrawled("Lễ hội - Couture", listName.size());
             for(int i=0;i<listName.size();i++) {
                 Gson gson = new GsonBuilder().setPrettyPrinting().create();
