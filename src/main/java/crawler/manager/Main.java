@@ -22,35 +22,35 @@ import java.util.Map;
 public class Main {
 
     public void CrawlerToJson() throws IOException {
-    //    KingCharacterCrawler kingCrawler = new KingCharacterCrawler();
-    //    kingCrawler.start();
+       KingCharacterCrawler kingCrawler = new KingCharacterCrawler();
+       kingCrawler.start();
 
        NguoiKeSuCharacterCrawler nguoiKeSuCharacterCrawler = new NguoiKeSuCharacterCrawler();
        nguoiKeSuCharacterCrawler.start();
 
-    //    VanSuCharacterCrawler vanSuCharacterCrawler = new VanSuCharacterCrawler();
-    //    vanSuCharacterCrawler.start();
+       VanSuCharacterCrawler vanSuCharacterCrawler = new VanSuCharacterCrawler();
+       vanSuCharacterCrawler.start();
 
-    //    DataAggregation mergeCharacter = new DataAggregation();
-    //    mergeCharacter.Start();
+       DataAggregation mergeCharacter = new DataAggregation();
+       mergeCharacter.Start();
 
-    //     NguoiKeSuDynastyCrawler nguoiKeSuDynastyCrawler = new NguoiKeSuDynastyCrawler();
-    //     nguoiKeSuDynastyCrawler.start();
+        NguoiKeSuDynastyCrawler nguoiKeSuDynastyCrawler = new NguoiKeSuDynastyCrawler();
+        nguoiKeSuDynastyCrawler.start();
 
-    //     WikiDynastyCrawler wikiDynastyCrawler = new WikiDynastyCrawler();
-    //     wikiDynastyCrawler.start();
+        WikiDynastyCrawler wikiDynastyCrawler = new WikiDynastyCrawler();
+        wikiDynastyCrawler.start();
 
-    //     WikiEventCrawler wikiEventCrawler = new WikiEventCrawler();
-    //     wikiEventCrawler.start();
+        WikiEventCrawler wikiEventCrawler = new WikiEventCrawler();
+        wikiEventCrawler.start();
 
-    //     CoutureTravelFestivalCrawler coutureTravelFestivalCrawler = new CoutureTravelFestivalCrawler();
-    //     coutureTravelFestivalCrawler.start();
+        CoutureTravelFestivalCrawler coutureTravelFestivalCrawler = new CoutureTravelFestivalCrawler();
+        coutureTravelFestivalCrawler.start();
 
-    //     WikiFestivalCrawler wikiFestivalCrawler = new WikiFestivalCrawler();
-    //     wikiFestivalCrawler.start();
+        WikiFestivalCrawler wikiFestivalCrawler = new WikiFestivalCrawler();
+        wikiFestivalCrawler.start();
 
-    //     DsvhRelicCrawler dsvhRelicCrawler = new DsvhRelicCrawler();
-    //     dsvhRelicCrawler.start();
+        DsvhRelicCrawler dsvhRelicCrawler = new DsvhRelicCrawler();
+        dsvhRelicCrawler.start();
 
         Map<String, String> baseWebList = CrawlerManager.getBaseWebList();
         final String[] showBaseWebList = {""};

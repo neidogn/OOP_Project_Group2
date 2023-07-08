@@ -17,7 +17,7 @@ import history.entity.Character;
 public class DataAggregation {
 	public List<Character> loadDataJsonNKS() throws IOException {
         Gson gson = new Gson();
-        Reader reader = Files.newBufferedReader(Paths.get("OOP_Project_Group2/src/main/java/json/characterNKS.json"));
+        Reader reader = Files.newBufferedReader(Paths.get("src/main/java/json/characterNKS.json"));
         List<Character> NKS = Arrays.asList(gson.fromJson(reader, Character[].class)); 
         reader.close();
 

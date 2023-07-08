@@ -42,7 +42,7 @@ public class WikiDynastyCrawler extends DynastyCrawler {
 	
 	@Override
 	public void getData() {
-		File theFile = new File("OOP_Project_Group2\\src\\main\\java\\json\\Dynasties_wiki1.json");
+		File theFile = new File("src\\main\\java\\json\\Dynasties_wiki1.json");
 		this.connect(url);
 		String aaa = "Thủ đô";
 		String bbb = "Chính phủ";

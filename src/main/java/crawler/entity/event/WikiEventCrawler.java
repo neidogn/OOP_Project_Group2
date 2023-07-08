@@ -33,7 +33,7 @@ public class WikiEventCrawler extends EventCrawler{
 
     @Override
     public void getData() throws IOException {
-        File theFile = new File("OOP_Project_Group2\\src\\main\\java\\json\\event1.json");
+        File theFile = new File("src\\main\\java\\json\\event1.json");
         this.connect(url);
         int count = 0;
         Elements itemsElements = doc.select("div[class=mw-parser-output]");
